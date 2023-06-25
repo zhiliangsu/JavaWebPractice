@@ -30,3 +30,6 @@ bin/
 
 ### User ###
 desktop.ini
+HTML/audio
+HTML/video
+Vue/node_modules
