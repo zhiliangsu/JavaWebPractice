@@ -1,0 +1,375 @@
+{
+	"info": {
+		"_postman_id": "30313dd5-4517-4df4-b61a-35d193417d76",
+		"name": "SpringBootWeb请求响应",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21771262"
+	},
+	"item": [
+		{
+			"name": "01.简单参数",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/simpleParam?name=Tom&age=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"simpleParam"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Tom"
+						},
+						{
+							"key": "age",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "02.简单参数",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "TOM",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "20",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/simpleParam",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"simpleParam"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "03.简单实体参数",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/simplePojo?name=Tom&age=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"simplePojo"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Tom"
+						},
+						{
+							"key": "age",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "04.复杂实体参数",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/complexPojo?name=Tom&age=10&address.province=beijing&address.city=beijing",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"complexPojo"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Tom"
+						},
+						{
+							"key": "age",
+							"value": "10"
+						},
+						{
+							"key": "address.province",
+							"value": "beijing"
+						},
+						{
+							"key": "address.city",
+							"value": "beijing"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "05.数组参数",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/arrayParam?hobby=game&hobby=java&hobby=sing",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"arrayParam"
+					],
+					"query": [
+						{
+							"key": "hobby",
+							"value": "game"
+						},
+						{
+							"key": "hobby",
+							"value": "java"
+						},
+						{
+							"key": "hobby",
+							"value": "sing"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "06.集合参数",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/listParam?hobby=game&hobby=java&hobby=sing",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"listParam"
+					],
+					"query": [
+						{
+							"key": "hobby",
+							"value": "game"
+						},
+						{
+							"key": "hobby",
+							"value": "java"
+						},
+						{
+							"key": "hobby",
+							"value": "sing"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "07.日期时间参数",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/dateParam?updateTime=2022-12-12 10:05:45",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dateParam"
+					],
+					"query": [
+						{
+							"key": "updateTime",
+							"value": "2022-12-12 10:05:45"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "08.json参数",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"ITCAST\",\r\n    \"age\": 16,\r\n    \"address\": {\r\n        \"province\": \"北京\",\r\n        \"city\": \"北京\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/jsonParam",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"jsonParam"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "09.路径参数",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/path/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"path",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "10.路径参数",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/path/1/ITCAST",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"path",
+						"1",
+						"ITCAST"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "11.响应-字符串",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/hello",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hello"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "12.响应-对象json",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/getAddr",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getAddr"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "13.响应-集合json",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/listAddr",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"listAddr"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "14.响应-集合json-listEmp",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/listEmp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"listEmp"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
