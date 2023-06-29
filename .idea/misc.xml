@@ -13,6 +13,16 @@
         <option value="$PROJECT_DIR$/springboot-web-quickstart/pom.xml" />
         <option value="$PROJECT_DIR$/http-server-demo/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-web-req-resp/pom.xml" />
+        <option value="$PROJECT_DIR$/MyBatis/springboot-mybatis-quickstart/pom.xml" />
+        <option value="$PROJECT_DIR$/MyBatis/springboot-mybatis-crud/pom.xml" />
+        <option value="$PROJECT_DIR$/Maven/maven-projectC/pom.xml" />
+        <option value="$PROJECT_DIR$/Maven/maven-project01/pom.xml" />
+        <option value="$PROJECT_DIR$/Maven/http-server-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/Maven/maven-project02/pom.xml" />
+        <option value="$PROJECT_DIR$/Maven/maven-projectB/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBootWeb/springboot-web-req-resp/pom.xml" />
+        <option value="$PROJECT_DIR$/Maven/maven-projectA/pom.xml" />
+        <option value="$PROJECT_DIR$/Maven/springboot-web-quickstart/pom.xml" />
       </list>
     </option>
   </component>
