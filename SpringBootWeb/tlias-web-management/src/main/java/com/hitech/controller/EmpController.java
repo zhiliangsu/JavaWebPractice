@@ -1,5 +1,6 @@
 package com.hitech.controller;
 
+import com.hitech.pojo.Dept;
 import com.hitech.pojo.Emp;
 import com.hitech.pojo.PageBean;
 import com.hitech.pojo.Result;
@@ -62,6 +63,31 @@ public class EmpController {
     public Result add(@RequestBody Emp emp) {
         log.info("新增员工操作: {}", emp);
         empService.add(emp);
+        return Result.success();
+    }
+
+    /**
+     * 根据id查询员工信息
+     *
+     * @param id
+     * @return
+     */
+    @GetMapping("/{id}")
+    public Result getById(@PathVariable Integer id) {
+        log.info("根据id查询员工: {}", id);
+        Emp emp = empService.getById(id);
+        return Result.success(emp);
+    }
+
+    /**
+     * 修改员工信息
+     * @param emp
+     * @return
+     */
+    @PutMapping
+    public Result update(@RequestBody Emp emp){
+        log.info("修改员工: {}", emp);
+        empService.update(emp);
         return Result.success();
     }
 

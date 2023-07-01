@@ -44,6 +44,17 @@ public class EmpServiceImpl implements EmpService {
         empMapper.insert(emp);
     }
 
+    @Override
+    public Emp getById(Integer id) {
+        return empMapper.getById(id);
+    }
+
+    @Override
+    public void update(Emp emp) {
+        emp.setUpdateTime(LocalDateTime.now());
+        empMapper.update(emp);
+    }
+
     /* @Override
     public PageBean page(Integer page, Integer pageSize) {
         // 1.获取总记录数

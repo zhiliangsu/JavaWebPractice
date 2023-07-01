@@ -3,6 +3,7 @@ package com.hitech.mapper;
 import com.hitech.pojo.Emp;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Select;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -26,4 +27,9 @@ public interface EmpMapper {
     @Insert("insert into emp (username, name, gender, image, job, entrydate, dept_id, create_time, update_time) " +
             "values (#{username},#{name},#{gender},#{image},#{job},#{entrydate},#{deptId},#{createTime},#{updateTime})")
     void insert(Emp emp);
+
+    @Select("select * from emp where id=#{id}")
+    Emp getById(Integer id);
+
+    void update(Emp emp);
 }
