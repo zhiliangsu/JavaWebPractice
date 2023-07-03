@@ -18,10 +18,15 @@ mybatis:
     map-underscore-to-camel-case: true
 
 #阿里云OSS配置
+#aliyun:
+#  oss:
+#    endpoint: https://oss-cn-hangzhou.aliyuncs.com
+#    accessKeyId: LTAI5tS2HgVG9deQiHYAQ8Yc
+#    accessKeySecret: K2w5lYeDfdgwjH6Ov0yH83jkVWMsi9
+#    bucketName: szl-bucket-4test
 aliyun:
   oss:
     endpoint: https://oss-cn-hangzhou.aliyuncs.com
-    accessKeyId: LTAI5tS2HgVG9deQiHYAQ8Yc
-    accessKeySecret: K2w5lYeDfdgwjH6Ov0yH83jkVWMsi9
-    bucketName: szl-bucket-4test
-
+    access-key-id: LTAI5tS2HgVG9deQiHYAQ8Yc
+    access-key-secret: K2w5lYeDfdgwjH6Ov0yH83jkVWMsi9
+    bucket-name: szl-bucket-4test

@@ -55,6 +55,11 @@ public class EmpServiceImpl implements EmpService {
         empMapper.update(emp);
     }
 
+    @Override
+    public Emp login(Emp emp) {
+        return empMapper.getByUsernameAndPassword(emp);
+    }
+
     /* @Override
     public PageBean page(Integer page, Integer pageSize) {
         // 1.获取总记录数
