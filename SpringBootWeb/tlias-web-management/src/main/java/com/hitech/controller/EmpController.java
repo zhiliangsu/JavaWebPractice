@@ -1,5 +1,6 @@
 package com.hitech.controller;
 
+import com.hitech.anno.Log;
 import com.hitech.pojo.Dept;
 import com.hitech.pojo.Emp;
 import com.hitech.pojo.PageBean;
@@ -46,6 +47,7 @@ public class EmpController {
      * @param ids
      * @return
      */
+    @Log // 删除
     @DeleteMapping("/{ids}")
     public Result delete(@PathVariable List<Integer> ids) {
         log.info("批量删除操作: {}", ids);
@@ -59,6 +61,7 @@ public class EmpController {
      * @param emp
      * @return
      */
+    @Log // 新增
     @PostMapping
     public Result add(@RequestBody Emp emp) {
         log.info("新增员工操作: {}", emp);
@@ -84,6 +87,7 @@ public class EmpController {
      * @param emp
      * @return
      */
+    @Log // 修改
     @PutMapping
     public Result update(@RequestBody Emp emp){
         log.info("修改员工: {}", emp);

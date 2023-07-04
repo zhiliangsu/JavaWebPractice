@@ -1,13 +1,9 @@
 package com.hitech.controller;
 
-import com.hitech.anno.Log;
 import com.hitech.pojo.Dept;
 import com.hitech.pojo.Result;
 import com.hitech.service.DeptService;
-import com.hitech.service.EmpService;
 import lombok.extern.slf4j.Slf4j;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -38,7 +34,6 @@ public class DeptController {
      * @param id path variable
      * @return return a Result object.
      */
-    @Log // 删除
     @DeleteMapping("/{id}")
     public Result delete(@PathVariable Integer id) throws Exception {
         log.info("根据id删除部门: {}", id);
@@ -51,7 +46,6 @@ public class DeptController {
      * @param dept
      * @return
      */
-    @Log // 新增
     @PostMapping
     public Result add(@RequestBody Dept dept){
         log.info("新增部门: {}", dept);
@@ -71,7 +65,6 @@ public class DeptController {
         return Result.success(dept);
     }
 
-    @Log // 修改
     @PutMapping
     public Result update(@RequestBody Dept dept){
         log.info("修改部门: {}", dept);

@@ -24,6 +24,7 @@
         <option value="$PROJECT_DIR$/Maven/maven-projectA/pom.xml" />
         <option value="$PROJECT_DIR$/Maven/springboot-web-quickstart/pom.xml" />
         <option value="$PROJECT_DIR$/SpringBootWeb/tlias-web-management/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBootWeb/springboot-aop-quickstart/pom.xml" />
       </list>
     </option>
   </component>
