@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Maven/http-server-demo/http-server-demo.iml" filepath="$PROJECT_DIR$/Maven/http-server-demo/http-server-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringBootWeb/itheima-utils/itheima-utils.iml" filepath="$PROJECT_DIR$/SpringBootWeb/itheima-utils/itheima-utils.iml" />
     </modules>
   </component>
 </project>

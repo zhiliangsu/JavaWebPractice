@@ -35,3 +35,5 @@ aliyun:
 logging:
   level:
     org.springframework.jdbc.support.JdbcTransactionManager: debug
+
+name: itheima

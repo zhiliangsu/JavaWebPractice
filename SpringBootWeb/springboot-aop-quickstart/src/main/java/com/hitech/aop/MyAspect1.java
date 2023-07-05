@@ -13,7 +13,7 @@ public class MyAspect1 {
     // 切入点方法（公共的切入点表达式）
     @Pointcut("execution(* com.hitech.service.impl.DeptServiceImpl.*(..))")
     // private void pt(){};
-    public void pt() {};
+    public void pt() {}
 
     // 前置通知（引用切入点）
     @Before("pt()")

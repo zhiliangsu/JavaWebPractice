@@ -7,26 +7,35 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="maven-project01" />
-        <module name="maven-project02" />
-        <module name="tlias-web-management" />
         <module name="springboot-aop-quickstart" />
         <module name="springboot-mybatis-crud" />
-        <module name="http-server-demo" />
         <module name="springboot-mybatis-quickstart" />
-        <module name="springboot-web-req-resp" />
-        <module name="springboot-web-quickstart" />
+        <module name="itheima-utils" />
         <module name="maven-projectA" />
         <module name="maven-projectB" />
         <module name="maven-projectC" />
+        <module name="maven-project01" />
+        <module name="maven-project02" />
+        <module name="tlias-web-management" />
+        <module name="aliyun-oss-spring-boot-starter" />
+        <module name="http-server-demo" />
+        <module name="springboot-web-req-resp" />
+        <module name="springboot-web-quickstart" />
+        <module name="aliyun-oss-spring-boot-autoconfigure" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="springboot-web-config2" target="11" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="aliyun-oss-spring-boot-autoconfigure" options="-parameters" />
+      <module name="aliyun-oss-spring-boot-starter" options="-parameters" />
       <module name="springboot-aop-quickstart" options="-parameters" />
       <module name="springboot-mybatis-crud" options="-parameters" />
       <module name="springboot-mybatis-quickstart" options="-parameters" />
+      <module name="springboot-web-config2" options="-parameters" />
       <module name="springboot-web-quickstart" options="-parameters" />
       <module name="springboot-web-req-resp" options="-parameters" />
       <module name="tlias-web-management" options="-parameters" />

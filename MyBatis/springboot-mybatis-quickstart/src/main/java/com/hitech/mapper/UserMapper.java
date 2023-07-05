@@ -9,5 +9,5 @@ import java.util.List;
 @Mapper
 public interface UserMapper {
     @Select("select id, name, age, gender, phone from user")
-    public List<User> list();
+    List<User> list();
 }

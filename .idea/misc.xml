@@ -25,7 +25,17 @@
         <option value="$PROJECT_DIR$/Maven/springboot-web-quickstart/pom.xml" />
         <option value="$PROJECT_DIR$/SpringBootWeb/tlias-web-management/pom.xml" />
         <option value="$PROJECT_DIR$/SpringBootWeb/springboot-aop-quickstart/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBootWeb/itheima-utils/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBootWeb/springboot-web-config2/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBootWeb/aliyun-oss-spring-boot-starter/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBootWeb/aliyun-oss-spring-boot-starter/aliyun-oss-spring-boot-autoconfigure/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBootWeb/aliyun-oss-spring-boot-autoconfigure/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/SpringBootWeb/aliyun-oss-spring-boot-starter/aliyun-oss-spring-boot-autoconfigure/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="temurin-17" project-jdk-type="JavaSDK">

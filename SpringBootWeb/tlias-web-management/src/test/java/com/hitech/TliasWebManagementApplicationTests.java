@@ -16,7 +16,7 @@ class TliasWebManagementApplicationTests {
     @Test
     public void testUuid() {
         for (int i = 0; i < 1000; i++) {
-            System.out.println(UUID.randomUUID().toString());
+            System.out.println(UUID.randomUUID());
         }
     }
 

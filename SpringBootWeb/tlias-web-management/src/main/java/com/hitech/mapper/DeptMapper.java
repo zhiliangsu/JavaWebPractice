@@ -8,7 +8,7 @@ import java.util.List;
 @Mapper
 public interface DeptMapper {
     @Select("select * from dept")
-    public List<Dept> list();
+    List<Dept> list();
 
     @Delete("delete from dept where id=#{id}")
     void deleteById(Integer id);
